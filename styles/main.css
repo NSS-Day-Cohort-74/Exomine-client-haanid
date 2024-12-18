@@ -1,0 +1,30 @@
+
+.facility-minerals {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed royalblue;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: smaller;
+}
+
+
+.space-shop {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed purple;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: smaller;
+}
+
+.shop-minerals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}

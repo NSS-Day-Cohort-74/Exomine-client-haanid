@@ -1,0 +1,9 @@
+.facility-minerals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px dashed royalblue;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: smaller;
+}

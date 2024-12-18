@@ -1,6 +1,21 @@
 const state = {
+    "id": 0,
+    "governorId": 0,
+    "facilityId": 0
 
 }
+
+
+export const setGovernorOptions = async (chosenGovernorOptions) => {
+    state.governorId = chosenGovernorOptions
+    console.log(state)
+}
+
+export const setFacilityOptions = async (chosenFacilityOptions) => {
+    state.facilityId = chosenFacilityOptions
+    console.log(state)
+}
+
 
 export const setFacility = (facilityId) => {
     state.selectedFacility = facilityId
