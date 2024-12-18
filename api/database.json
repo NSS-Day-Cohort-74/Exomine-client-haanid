@@ -29,22 +29,22 @@
         {
             "id": 1,
             "name": "Almonty Industries",
-            "active": "yes"
+            "active": true
         },
         {
             "id": 2,
             "name": "Peabody Minerals",
-            "active": "yes"
+            "active": true
         },
         {
             "id": 3,
             "name": "Silver Peak Resources",
-            "active": "yes"
+            "active": true
         },
         {
             "id": 4,
             "name": "Ore Vista Extraction",
-            "active": "no"
+            "active": false
         }
     
     ],
@@ -115,37 +115,37 @@
         {
             "id": 1,
             "name": "Obama",
-            "status": "yes",
+            "active": true,
             "colonyId": 1
         },
         {
             "id": 2,
             "name": "Kennedy",
-            "status": "yes",
+            "active": true,
             "colonyId": 2
         },
         {
             "id": 3,
             "name": "Clinton",
-            "status": "yes",
+            "active": true,
             "colonyId": 3
         },
         {
             "id": 4,
             "name": "Biden",
-            "status": "yes",
+            "active": true,
             "colonyId": 4
         },
         {
             "id": 5,
             "name": "Rosevelt",
-            "status": "yes",
+            "active": true,
             "colonyId": 2
         },
         {
             "id": 6,
             "name": "Carter",
-            "status": "no",
+            "status": false,
             "colonyId": 1
         }
     ],

@@ -12,7 +12,7 @@
 
 
 
-export const governors = async () => {
+export const governorsDropDown = async () => {
     const response = await fetch("http://localhost:8088/governors")
     const governors = await response.json()
 
@@ -28,6 +28,6 @@ export const governors = async () => {
         </select>
         </div>
         `
-    
+    return html
 
 }
