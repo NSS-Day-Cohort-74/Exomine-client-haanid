@@ -31,3 +31,21 @@ export const facilitiesDropDown = async () => {
 }
 
 
+
+
+// const facilityRadioButtonsArray = minerals.map(
+//     (quantity) => {
+//         return `
+//         <div>
+//         <input type='radio'
+//         name='mineral'
+//         value='${mineral.id}' />
+//         ${mineral.quantity}
+//         </div>
+//         `
+//     }
+// ) 
+
+// facilitiesDropDownHTML += facilityRadioButtonsArray.join("")
+
+// return facilitiesDropDownHTML

@@ -1,21 +1,22 @@
-const state = {
+export const state = {
     "id": 0,
     "colonyId": 0, 
     "mineralId": 0,
     "facilityId": 0,
-    "quantity": 0
-
+    "quantity": 0,
+    "governorId": 0
 }
 
 
 export const setGovernorOptions = (chosenGovernorOptions) => {
-    state.governorId = chosenGovernorOptions
+    state.governorId = parseInt(chosenGovernorOptions)
     console.log(state)
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
 
 export const setFacilityOptions = (facilityId) => {
-    state.facilityId = facilityId
+    state.facilityId = parseInt(facilityId)
     console.log(state)
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }

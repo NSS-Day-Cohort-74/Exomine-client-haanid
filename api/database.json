@@ -95,19 +95,19 @@
     ],
     "colonies": [
         {
-            "id:": "1",
+            "id": "1",
             "name": "Mars"
         },
         {
-            "id:": "2",
+            "id": "2",
             "name": "Earth"
         },
         {
-            "id:": "3",
+            "id": "3",
             "name": "Pluto"
         },
         {
-            "id:": "4",
+            "id": "4",
             "name": "Moon"
         }
     ],

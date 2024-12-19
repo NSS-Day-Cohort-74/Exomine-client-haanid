@@ -1,7 +1,8 @@
-import { governorsDropDown } from "./governors.js"
+import { governorsDropDown, handleColonyChange } from "./governors.js"
 import { facilitiesDropDown } from "./facilities.js"
 import { spaceShopButton } from "./spaceShopButton.js"
 
+// import { facilitiesDropDownHTML} from "./facilities.js"
 
 
 
@@ -13,6 +14,7 @@ const renderAllHTML = async () => {
     const governorsHTML = await governorsDropDown()
     const facilitiesHTML = await facilitiesDropDown()
     const buttonHTML = await spaceShopButton()
+    
 
 
 
@@ -36,7 +38,9 @@ const renderAllHTML = async () => {
     </section>
 
     <section class="colony-minerals">
-    <h2>Colony Minerals
+    <h2 class="displayColony">Colony Minerals</h2>
+
+
 
     </section>
 
