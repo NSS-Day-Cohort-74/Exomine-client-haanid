@@ -1,10 +1,14 @@
+import { thisFacilityMineral } from "./minerals.js"
 import { setFacilityOptions } from "./TransientState.js"
 
 
-const handleFacilityChange = (changeEvent) => {
+const handleFacilityChange = async (changeEvent) => {
     if (changeEvent.target.id === "facilities") {
         const chosenOption = changeEvent.target.value
         setFacilityOptions(chosenOption)
+        const facilityMineralsList = document.querySelector(".facility-minerals")
+        if(facilityMineralsList)
+            facilityMineralsList.innerHTML = await thisFacilityMineral(chosenOption)
     }
 }
 
