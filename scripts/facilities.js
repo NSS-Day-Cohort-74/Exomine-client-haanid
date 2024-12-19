@@ -1,11 +1,14 @@
+import { setFacilityOptions } from "./TransientState.js"
 
 
+const handleFacilityChange = (changeEvent) => {
+    if (changeEvent.target.id === "facilities") {
+        const chosenOption = changeEvent.target.value
+        setFacilityOptions(chosenOption)
+    }
+}
 
-
-
-
-
-
+document.addEventListener("change", handleFacilityChange)
 
 export const facilitiesDropDown = async () => {
     const response = await fetch("http://localhost:8088/facilities")
@@ -15,6 +18,7 @@ export const facilitiesDropDown = async () => {
         facilitiesDropDownHTML += `
         <div>
         <select id="facilities">
+         <option value="0">Choose Facility</option>
         ${facilities.map(
             (facility) => {
                 return `<option value="${facility.id}">${facility.name}</option>`
@@ -25,3 +29,5 @@ export const facilitiesDropDown = async () => {
         `
     return facilitiesDropDownHTML
 }
+
+
