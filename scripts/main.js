@@ -40,7 +40,7 @@ const renderAllHTML = async () => {
 
     </section>
 
-<article class="shop-minerals"
+<article class="shop-minerals">
 
     <section class="facility-minerals">
     <h2>Facility Minerals</h2>
