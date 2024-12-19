@@ -3,6 +3,7 @@ import { setFacilityOptions } from "./TransientState.js"
 
 const handleFacilityChange = (changeEvent) => {
     if (changeEvent.target.id === "facilities") {
+        debugger
         const chosenOption = changeEvent.target.value
         setFacilityOptions(chosenOption)
     }
