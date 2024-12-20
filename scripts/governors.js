@@ -1,4 +1,4 @@
-import {setGovernorOptions} from "./TransientState.js"
+import {setColonyId, setGovernorOptions} from "./TransientState.js"
 import { state } from "./TransientState.js"
 
 const handleGovernorChange = async (changeEvent) => {
@@ -23,15 +23,14 @@ export const handleColonyChange = async () => {
         
         const governors = await governorsResponse.json()
         const colonies = await coloniesResponse.json()
-        console.log(colonies)
         
         const selectedGovernor = governors.find(governor => governor.id === parseInt(state.governorId))
-
-        console.log(selectedGovernor)
+        setColonyId(selectedGovernor.colonyId)
+        
         
         const matchingColony = colonies.find(colony => parseInt(colony.id) === selectedGovernor.colonyId)
         
-        console.log(matchingColony)
+        
 
         return matchingColony ? matchingColony.name : null
     } catch (error) {

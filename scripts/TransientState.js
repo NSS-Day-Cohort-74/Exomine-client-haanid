@@ -14,6 +14,11 @@ export const setGovernorOptions = (chosenGovernorOptions) => {
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
+export const setColonyId = (governorColony) => {
+    state.colonyId = parseInt(governorColony)
+    console.log(state)
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
 
 export const setFacilityOptions = (facilityId) => {
     state.facilityId = parseInt(facilityId)
