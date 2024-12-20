@@ -80,6 +80,8 @@ export const purchaseMineral = async () => {
                     }
                     const response = await fetch("http://localhost:8088/colonyMinerals", colonyMineralUpdate)
                 }
+                const moreMinerals = new CustomEvent("requestedMoreMinerals")
+                document.dispatchEvent(moreMinerals)
             }
  
                 const currentColonyQuantity = state.quantity
@@ -97,7 +99,8 @@ export const purchaseMineral = async () => {
                         })
                     }
                     const response = await fetch("http://localhost:8088/colonyMinerals", colonyMineralAddition)
-    document.dispatchEvent(new CustomEvent("stateChanged"))
+    const customEvent = new CustomEvent("newRequestedMineral")
+    document.dispatchEvent(customEvent)
 }
 
 
