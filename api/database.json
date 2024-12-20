@@ -1,4 +1,170 @@
 {
-    "minerals":[],
-    "facilityMinerals": []
+  "minerals": [
+    {
+      "id": 1,
+      "name": "Gold"
+    },
+    {
+      "id": 2,
+      "name": "Emeralds"
+    },
+    {
+      "id": 3,
+      "name": "Platinum"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Bronze"
+    },
+    {
+      "id": 6,
+      "name": "Diamond"
+    }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "name": "Almonty Industries",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Peabody Minerals",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Silver Peak Resources",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Ore Vista Extraction",
+      "active": false
+    }
+  ],
+  "facilityMinerals": [
+    {
+      "id": 1,
+      "facilityId": 1,
+      "mineralId": 2,
+      "quantity": 90
+    },
+    {
+      "id": 2,
+      "facilityId": 2,
+      "mineralId": 3,
+      "quantity": 97
+    },
+    {
+      "id": 3,
+      "facilityId": 3,
+      "mineralId": 4,
+      "quantity": 50
+    },
+    {
+      "id": 4,
+      "facilityId": 4,
+      "mineralId": 6,
+      "quantity": 75
+    },
+    {
+      "id": 5,
+      "facilityId": 3,
+      "mineralId": 5,
+      "quantity": 80
+    },
+    {
+      "id": 6,
+      "facilityId": 1,
+      "mineralId": 1,
+      "quantity": 68
+    },
+    {
+      "id": 7,
+      "facilityId": 4,
+      "mineralId": 2,
+      "quantity": 50
+    }
+  ],
+  "colonies": [
+    {
+      "id": "1",
+      "name": "Mars"
+    },
+    {
+      "id": "2",
+      "name": "Earth"
+    },
+    {
+      "id": "3",
+      "name": "Pluto"
+    },
+    {
+      "id": "4",
+      "name": "Moon"
+    }
+  ],
+  "governors": [
+    {
+      "id": 1,
+      "name": "Obama",
+      "active": true,
+      "colonyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Kennedy",
+      "active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 3,
+      "name": "Clinton",
+      "active": true,
+      "colonyId": 3
+    },
+    {
+      "id": 4,
+      "name": "Biden",
+      "active": true,
+      "colonyId": 4
+    },
+    {
+      "id": 5,
+      "name": "Rosevelt",
+      "active": true,
+      "colonyId": 2
+    },
+    {
+      "id": 6,
+      "name": "Carter",
+      "status": false,
+      "colonyId": 1
+    }
+  ],
+  "colonyMinerals": [
+    {
+      "id": 0,
+      "colonyId": 1,
+      "mineralId": 1,
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "colonyId": 1,
+      "mineralId": 2,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "colonyId": 2,
+      "mineralId": 3,
+      "quantity": 1
+    }
+  ]
 }
