@@ -19,7 +19,7 @@ export const purchasePreview = async () => {
     let facilityName = state.facilityId
     let mineralName = state.mineralId
     for (const mineral of facilityAndMinerals) {
-        debugger
+    
         if(mineral.mineral.id === mineralName)
             mineralName = mineral.mineral.name
     }

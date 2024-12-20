@@ -3,9 +3,10 @@
     display: flex;
     justify-content: space-evenly;
     border: 1px dashed royalblue;
-    padding: 1rem;
+    padding: 4rem;
     margin: 0.5rem 0;
     font-size: smaller;
+    flex-direction: column
 }
 
 
@@ -13,9 +14,10 @@
     display: flex;
     justify-content: space-evenly;
     border: 1px dashed purple;
-    padding: 1rem;
+    padding: 4rem;
     margin: 0.5rem 0;
     font-size: smaller;
+    flex-direction: column;
 }
 
 .shop-minerals {
@@ -27,4 +29,33 @@
 h1 {
     display: flex;
     justify-content: center;
+}
+
+
+.colony-minerals {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto; /* Center it horizontally */
+    margin-bottom: auto;
+    max-width: 80%; /* Limit the width to 80% of the container */
+}
+
+#purchaseMinerals {
+    display: flex;
+    justify-content: center
+}
+.mineralRadioButtons {
+    display: flex;
+}
+
+.purchasePreview {
+    display: flex;
+    justify-content:center;
+    
+}
+.headerPreview {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

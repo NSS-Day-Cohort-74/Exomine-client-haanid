@@ -7,7 +7,7 @@ const handleGovernorChange = async (changeEvent) => {
         setGovernorOptions(chosenOption)
 
         const colonyName = await handleColonyChange()
-        const colonyDisplay = document.querySelector("#displayColony")
+        const colonyDisplay = document.querySelector("#displayColonyMinerals")
         if (colonyDisplay) {
             colonyDisplay.textContent =colonyName ? `Colony: ${colonyName}` : "No colony selected"
         }
@@ -39,6 +39,19 @@ export const handleColonyChange = async () => {
         return null
     }
 }
+
+export const colonySection = () => {
+
+let html = ""
+html +=
+    `<section class="colony-minerals">
+    <h2 id="displayColonyMinerals">Colony Minerals</h2>
+
+    </section>`
+
+    return html
+}
+
 
 
 document.addEventListener("change", handleGovernorChange)
