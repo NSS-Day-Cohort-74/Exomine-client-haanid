@@ -53,7 +53,7 @@ const renderAllHTML = async () => {
     
     <section class="space-shop">
     <h2>Space Shop</h2>
-
+        <p class="purchasePreview"></p>
     ${buttonHTML}
 
     </section>
