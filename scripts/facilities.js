@@ -6,7 +6,7 @@ const handleFacilityChange = async (changeEvent) => {
     if (changeEvent.target.id === "facilities") {
         const chosenOption = changeEvent.target.value
         setFacilityOptions(chosenOption)
-        const facilityMineralsList = document.querySelector(".facility-minerals")
+        const facilityMineralsList = document.querySelector(".minerals-list")
         if(facilityMineralsList)
             facilityMineralsList.innerHTML = await thisFacilityMineral(chosenOption)
     }

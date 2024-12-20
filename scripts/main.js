@@ -48,7 +48,7 @@ const renderAllHTML = async () => {
 
     <section class="facility-minerals">
     <h2>Facility Minerals</h2>
-
+        <p class="minerals-list"></p>
     </section>
     
     <section class="space-shop">
