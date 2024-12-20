@@ -5,6 +5,7 @@ import { purchaseMineral, setMineralId } from "./TransientState.js"
 
 const handleSpaceShopClick = (clickEvent) => {
     if (clickEvent.target.id === "purchaseMinerals") {
+        debugger
         purchaseMineral()
     }
 }
