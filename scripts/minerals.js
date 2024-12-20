@@ -32,7 +32,7 @@ export const thisFacilityMineral = async (facilityId) => {
         (thisFacilityMineral) => {
         return `
         <div class="mineralRadioButtons">
-            <input type="radio" name="minerals" value="${thisFacilityMineral.mineral.id}"/> ${thisFacilityMineral.quantity} ${thisFacilityMineral.mineral.name}
+            <input type="radio" name="minerals" value="${thisFacilityMineral.mineral.id}"/> ${thisFacilityMineral.quantity} tons ${thisFacilityMineral.mineral.name}
         </div>`
         })
         return mineralRadioButtons
