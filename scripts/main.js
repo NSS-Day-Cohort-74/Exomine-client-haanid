@@ -71,6 +71,7 @@ const renderAllHTML = async () => {
 }
 
 
-
+document.addEventListener("newRequestedMinerals", renderAllHTML)
+document.addEventListener("requestedMoreMinerals", renderAllHTML)
 
 renderAllHTML()
