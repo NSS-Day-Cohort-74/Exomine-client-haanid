@@ -1,6 +1,7 @@
 import { colonySection, governorsDropDown, handleColonyChange } from "./governors.js"
 import { facilitiesDropDown } from "./facilities.js"
 import { spaceShopButton } from "./spaceShopButton.js"
+import { purchasedMinerals } from "./purchasedMineralHTML.js"
 
 // import { facilitiesDropDownHTML} from "./facilities.js"
 
@@ -15,6 +16,7 @@ const renderAllHTML = async () => {
     const facilitiesHTML = await facilitiesDropDown()
     const buttonHTML = await spaceShopButton()
     const colonyHTML = colonySection()
+    const purchaseHTML = await purchasedMinerals()
 
 
 
@@ -40,6 +42,7 @@ const renderAllHTML = async () => {
     <section class="colony-minerals">
 
     ${colonyHTML}
+    ${purchaseHTML}
 
     </section>
  
