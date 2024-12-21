@@ -52,8 +52,10 @@ export const purchaseMineral = async () => {
     const facilityMinerals = await facilityMineralsResponse.json()
     const updateQuantity = (currentColonyQuantity, mineralId, facilityMinerals) => {
         let updatedColonyQuantity = currentColonyQuantity
+
         for(const facilityMineral of facilityMinerals) {
             if(mineralId === facilityMineral.mineralId) {
+                
                 updatedColonyQuantity = currentColonyQuantity + 1 
             }   
         }
@@ -63,8 +65,8 @@ export const purchaseMineral = async () => {
     for (const colonyMineral of colonyMinerals) {
         debugger
         if(state.colonyId === colonyMineral.colonyId && state.mineralId === colonyMineral.mineralId) {
-            const updateCurrentColonyQuantity = updateQuantity(currentColonyQuantity, colonyMineral.mineralId, facilityMinerals)
             const currentColonyQuantity = colonyMineral.quantity
+            const updateCurrentColonyQuantity = updateQuantity(currentColonyQuantity, colonyMineral.mineralId, facilityMinerals)
                 const colonyMineralUpdate = {
                         method: "PUT",
                         headers: 
@@ -78,7 +80,7 @@ export const purchaseMineral = async () => {
                         quantity: updateCurrentColonyQuantity
                         })
                     }
-                    const response = await fetch("http://localhost:8088/colonyMinerals", colonyMineralUpdate)
+                    const response = await fetch(`http://localhost:8088/colonyMinerals/${colonyMineral.id}`, colonyMineralUpdate)
                 }
                 const moreMinerals = new CustomEvent("requestedMoreMinerals")
                 document.dispatchEvent(moreMinerals)

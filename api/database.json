@@ -152,18 +152,36 @@
       "id": 0,
       "colonyId": 1,
       "mineralId": 1,
-      "quantity": 1
+      "quantity": 4
     },
     {
       "id": 1,
+      "colonyId": 1,
+      "mineralId": 1,
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "colonyId": 1,
+      "mineralId": 1,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "colonyId": 1,
+      "mineralId": 2,
+      "quantity": 2
+    },
+    {
+      "id": 4,
       "colonyId": 1,
       "mineralId": 2,
       "quantity": 1
     },
     {
-      "id": 2,
-      "colonyId": 2,
-      "mineralId": 3,
+      "id": 5,
+      "colonyId": 1,
+      "mineralId": 1,
       "quantity": 1
     }
   ]
